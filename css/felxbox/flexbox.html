@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: auto;
+        width: 800px;
+        border: 1px solid black;
+        display: flex;
+        align-items: flex-start;
+        height: 600px;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background: red;
+        color: white;
+        margin: 10px;
+      }
+      .navigasi {
+        width: 800px;
+        margin: auto;
+        font-family: poppins, sans-serif;
+      }
+
+      .navigasi nav {
+        background-color: black;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navigasi h1 {
+        color: white;
+      }
+
+      .navigasi ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+
+      .navigasi ul li {
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .navigasi ul li:hover {
+        color: yellow;
+      }
+      .button {
+        background: white;
+        color: black;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .button:hover {
+        background-color: yellow        ;
+        color: black;
+        transition: 0.3s;
+        padding: 10px 40px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigasi">
+      <nav>
+        <h1>a.ghifary</h1>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+        <div class="button">hire me</div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Delight</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-image: url("https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 25px;
+      }
+
+      .container {
+        width: 85%;
+        max-width: 900px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.95);
+        border: 3px solid #d87b14;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        position: relative;
+      }
+      .pita {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 120px;
+        height: 120px;
+      }
+
+      .pita img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      h1 {
+        text-align: center;
+        color: #d35400;
+        font-size: 52px;
+        margin-bottom: 15px;
+      }
+
+      nav {
+        text-align: center;
+        border-top: 2px solid #f3c79d;
+        padding-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: #e67e22;
+        padding: 10px 22px;
+        border-radius: 20px;
+        margin: 0 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        background: #ca6702;
+      }
+
+      .banner img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+      }
+
+      .judul {
+        margin-top: 20px;
+        background: #fff9f2;
+        border-left: 5px solid orange;
+        padding: 15px;
+      }
+
+      .judul h2 {
+        color: #d35400;
+        margin-bottom: 8px;
+      }
+
+      .judul p {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .judul span {
+        color: #2980b9;
+        font-weight: bold;
+      }
+
+      .isi {
+        margin-top: 18px;
+        border: 1px solid #ddd;
+        padding: 18px;
+        background: white;
+        line-height: 1.7;
+        color: #555;
+        text-align: justify;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 25px 0;
+        align-items: flex-end;
+      }
+
+      .foto {
+        width: 48%;
+        background: white;
+        padding: 6px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+      }
+
+      .foto img {
+        width: 100%;
+        border-radius: 6px;
+        display: block;
+      }
+
+      .pizza img {
+        height: 280px;
+        object-fit: cover;
+      }
+
+      .burger img {
+        height: 360px;
+        object-fit: cover;
+      }
+
+      .tombol {
+        text-align: center;
+      }
+
+      button {
+        background: #2ecc71;
+        color: white;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #27ae60;
+      }
+
+      footer {
+        margin-top: 20px;
+        background: #34495e;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Delight</h1>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Reservations</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="pita">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png"
+          alt="Pita"
+        />
+      </div>
+      <div class="banner">
+        <img
+          src="https://gwg.imgix.net/74005.jpg?fit=crop&crop=focal&w=1400&h=600"
+          alt="Restaurant"
+        />
+      </div>
+
+      <div class="judul">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>By <span>Chef Antonio</span> | August 29, 2024</p>
+      </div>
+
+      <div class="isi">
+        <p>
+          Experience the best culinary delights at Restaurant Delight. Our menu
+          is crafted with the freshest ingredients to provide you with an
+          unforgettable dining experience.
+        </p>
+
+        <br />
+
+        <p>
+          We offer a wide variety of dishes, from traditional cuisine to modern
+          culinary innovations, all prepared by our experienced chefs.
+        </p>
+
+        <br />
+
+        <p>
+          Join us for a meal that will tantalize your taste buds and leave you
+          craving for more.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <div class="foto pizza">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSUnAh86IX4nHYuXBJw8P5yIaOlctbLbubEcMWlpRQ0JvS8JwM"
+            alt="Pizza"
+          />
+        </div>
+
+        <div class="foto burger">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17RB_rjhkbXt1PAI-ej9ie0mxtpS3qJWspCTS-9FQEcJBD8WS"
+            alt="Burger"
+          />
+        </div>
+      </div>
+
+      <div class="tombol">
+        <button id="booking">Book Now</button>
+      </div>
+
+      <footer>&copy; Restaurant Delight 2024</footer>
+    </div>
+  </body>
+</html>

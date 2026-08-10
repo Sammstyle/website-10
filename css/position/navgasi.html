@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: lightgray;
+      }
+
+      a:hover {
+        color: yellow;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      a {
+        margin: 15px;
+        font-family: poppins, sans-serif;
+      }
+
+      section {
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-image {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      section h1 {
+        color: white;
+        font-size: 80px;
+        margin-bottom: 10px;
+        font-family: poppins, sans-serif;
+      }
+
+      section p {
+        color: yellow;
+        font-size: 20px;
+        font-family: poppins, sans-serif;
+      }
+
+      button {
+        padding: 12px 24px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: yellow;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      button:focus {
+        outline: 3px solid yellow;
+      }
+
+      .card-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 300px;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 16px;
+        text-align: center;
+        font-family: poppins, sans-serif;
+      }
+
+      .container h4 {
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .container p {
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">services</a>
+      <a href="#">portfolio</a>
+      <a href="#">contact</a>
+    </nav>
+
+    <section id="hero" class="hero-image">
+      <h1>Welcome to our website</h1>
+      <p>your sucses <span>here</span></p>
+      <button>click here</button>
+    </section>
+
+    <div class="card-wrapper">
+      <div class="card">
+        <img
+          src="https://materializecss.com/images/sample-1.jpg"
+          alt="foto"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h4><b>Pesonanya Danau Moraine</b></h4>
+          <p>Memiliki warna biru pirus (turquoise) yang jernih dan tenang, memantulkan bayangan pegunungan dan langit di atasnya seperti cermin.</p>
+          <button>click here</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

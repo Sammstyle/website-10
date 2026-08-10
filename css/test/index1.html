@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contoh Pseudo-Class</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      a:link {
+        color: blue;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: purple;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button:active {
+        background-color: red;
+        color: white;
+      }
+
+      input:focus {
+        border: 2px solid green;
+        outline: none;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--psudo css-->
+    <p>
+      <a href="https://example.com" target="_blank"
+        >Coba Klik Link Ini (:link & :visited)</a
+      >
+    </p>
+
+    <p>
+      <button>Tahan Klik Saya (:active)</button>
+    </p>
+
+    <p>
+      <input type="text" placeholder="Klik/ketik di sini (:focus)" />
+    </p>
+
+    <p>
+      <input type="checkbox" id="setuju" />
+      <label for="setuju">Centang saya (:checked)</label>
+    </p>
+  </body>
+</html>
