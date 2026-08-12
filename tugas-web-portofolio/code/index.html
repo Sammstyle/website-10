@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devopoloper portofolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: white;
+        font-family: poppins, sans-serif;
+      }
+      header {
+        background-color: #222222;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header nav {
+        position: absolute;
+        left: 40%;
+      }
+      header div img {
+        width: 100px;
+        margin-left: 30px;
+      }
+      header nav ul {
+        list-style: none;
+        color: white;
+        gap: 50px;
+        display: flex;
+      }
+      section {
+        min-height: 700px;
+        background-color: #161513;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 60px;
+      }
+      section h1 {
+        padding-top: 30px;
+        color: white;
+        font-size: 50px;
+        font-style: bold;
+      }
+      section span {
+        color: #ff705c;
+      }
+      section p {
+        padding-top: 30px;
+        color: #c5c5c5;
+      }
+    
+      .button {
+        display: flex;
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .button button {
+        padding: 14px 28px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .button1 {
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid #ffffff;
+      }
+      .button2 {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div><img src="./asset/logo.png" alt="" /></div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Project</li>
+          <li>experience</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Hero-->
+      <section>
+        <div>
+          <img src="./asset/]section-img.png" alt="section-img" />
+        </div>
+        <h1>
+          I do code and<br />
+          make content <span>about it!</span>
+        </h1>
+        <p>
+          I am a seasoned full-stack software engineer with over<br />
+          8 years of professional experience, specializing in backend
+          development.<br />
+          My expertise lies in crafting robust and scalable SaaS-based<br />
+          architectures on the Amazon AWS platform.
+        </p>
+        <div class="button">
+          <button class="button1">Get In Touch</button>
+          <button class="button2">Download CV</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
