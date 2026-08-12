@@ -3,105 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devopoloper portofolio</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: white;
-        font-family: poppins, sans-serif;
-      }
-      header {
-        background-color: #222222;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      header nav {
-        position: absolute;
-        left: 40%;
-      }
-      header div img {
-        width: 100px;
-        margin-left: 30px;
-      }
-      header nav ul {
-        list-style: none;
-        color: white;
-        gap: 50px;
-        display: flex;
-      }
-      section {
-        min-height: 700px;
-        background-color: #161513;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px 60px;
-      }
-      section h1 {
-        padding-top: 30px;
-        color: white;
-        font-size: 50px;
-        font-style: bold;
-      }
-      section span {
-        color: #ff705c;
-      }
-      section p {
-        padding-top: 30px;
-        color: #c5c5c5;
-      }
-    
-      .button {
-        display: flex;
-        gap: 16px;
-        margin-top: 30px;
-      }
 
-      .button button {
-        padding: 14px 28px;
-        border-radius: 50px;
-        font-size: 16px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      .button1 {
-        background-color: #ffffff;
-        color: #000000;
-        border: 2px solid #ffffff;
-      }
-      .button2 {
-        background-color: transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-      }
-    </style>
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div><img src="./asset/logo.png" alt="" /></div>
+      <div>
+        <img src="./asset/logo.png" alt="Developer Portfolio Logo" />
+      </div>
+
       <nav>
         <ul>
           <li>Home</li>
           <li>Project</li>
-          <li>experience</li>
-          <li>contact</li>
+          <li>Experience</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <!--Hero-->
       <section>
         <div>
-          <img src="./asset/]section-img.png" alt="section-img" />
+          <img src="./asset/]section-img.png" alt="Developer illustration" />
         </div>
         <h1>
           I do code and<br />
@@ -119,6 +44,138 @@
           <button class="button2">Download CV</button>
         </div>
       </section>
+      <section class="experience">
+        <h3>EXPERIENCE WITH</h3>
+
+        <ul>
+          <li>
+            <img src="./asset/javascript.png" alt="JavaScript" />
+          </li>
+
+          <li>
+            <img src="./asset/nodejs.png" alt="Node.js" />
+          </li>
+
+          <li>
+            <img src="./asset/html (1).png" alt="HTML5" />
+          </li>
+
+          <li>
+            <img src="./asset/css.png" alt="CSS3" />
+          </li>
+
+          <li>
+            <img src="./asset/reactjs.png" alt="React" />
+          </li>
+        </ul>
+      </section>
+      <section class="projects" id="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-list">
+          <!-- HTML PROJECT -->
+          <article class="project-card">
+            <a href="#">
+              <img src="./asset/html-article.jpg" alt="HTML Tutorial" />
+              <div class="project-info">
+                <small>CLICK HERE TO VISIT</small>
+                <h3>HTML TUTORIAL</h3>
+                <img class="icon-view" src="./asset/View Icon.png" alt="" />
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="#">
+              <img src="./asset/css-article.jpg" alt="CSS Tutorial" />
+
+              <div class="project-info">
+                <small>CLICK HERE TO VISIT</small>
+                <h3>CSS TUTORIAL</h3>
+                <img class="icon-view" src="./asset/View Icon.png" alt="" />
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!--Experience-->
+      <section class="experience-section">
+        <h2>EXPERIENCE</h2>
+        <div class="experience-list">
+          <article class="experience-item active">
+            <div class="experience-header">
+              <div class="company">
+                <span class="company-icon"><img src="./asset/google-logo.png" alt="google"></span>
+                <h3>Lead Software Engineer at Google</h3>
+              </div>
+
+              <time>Nov 2019 - Present</time>
+            </div>
+
+            <p>
+              As a Senior Software Engineer at Google, I played a pivotal role
+              in developing innovative solutions for Google's core search
+              algorithms. Collaborating with a dynamic team of engineers, I
+              contributed to the enhancement of search accuracy and efficiency
+              for millions of users worldwide.
+            </p>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-header">
+              <div class="company">
+                <span class="company-icon"><img src="./asset/apple-logo.png" alt=""></span>
+                <h3>Junior Software Engineer at Apple</h3>
+              </div>
+
+              <time>Jan 2016 - Dec 2017</time>
+            </div>
+            <p>
+              During my tenure at Apple, I held the role of Software Architect,
+              where I played a key role in shaping the architecture of
+              mission-critical software projects. Responsible for designing
+              scalable and efficient systems, I provided technical leadership
+              across a cross-functional team.
+            </p>
+          </article>
+          <article class="experience-item">
+            <div class="experience-header">
+              <div class="company">
+                <span class="company-icon meta"><img src="./asset/meta-logo.png" alt=""></span>
+                <h3>Software Engineer at Meta</h3>
+              </div>
+              <time>Jan 2017 - Oct 2019</time>
+            </div>
+            <p>
+              At Meta, I served as a Software Engineer, focusing on the design
+              and implementation of backend systems for the social media giant's
+              dynamic platform. Working on projects that involved large-scale
+              data processing and user engagement features, I leveraged my
+              expertise to ensure seamless functionality and scalability.
+            </p>
+          </article>
+        </div>
+      </section>
+      <footer class="contact" id="contact">
+        <div class="contact-content">
+          <h2>Contact</h2>
+
+          <p>
+            Seasoned Full Stack Software Engineer with over 8 years of hands-on
+            experience in designing and implementing robust, scalable, and
+            innovative web solutions. Adept at leveraging a comprehensive skill
+            set encompassing front-end and back-end technologies.
+          </p>
+
+          <a href="mailto:abmacdehub@gmail.com" class="email">
+            ✉ abmacdehub@gmail.com
+          </a>
+
+          <div class="social-media">
+            <img src="./asset/instagram.png" alt="ig"></a>
+            <img src="./asset/x.png" alt="x"></a>
+            <img src="./asset/youtube.png" alt="yt"></a>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

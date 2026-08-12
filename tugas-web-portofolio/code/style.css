@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Poppins, sans-serif;
+}
+header {
+  height: 70px;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  padding: 0 220px;
+  box-shadow: none;
+}
+
+header div img {
+  width: 65px;
+  margin-left: 0;
+}
+
+header nav {
+  position: static;
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  color: white;
+}
+
+header nav ul li {
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*hero*/
+section {
+  min-height: 400px;
+  background-color: #161513;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+section h1 {
+  padding-top: 25px;
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+section span {
+  color: #ff705c;
+}
+
+section p {
+  padding-top: 25px;
+  color: #a5a5a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/*Butoon*/
+.button {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.button button {
+  padding: 13px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button1 {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.button2 {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+/*experience*/
+.experience {
+  background-color: #161513;
+  padding: 35px 20px 55px;
+  text-align: center;
+  min-height: auto;
+}
+
+.experience h3 {
+  color: #c5c5c5;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.experience ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.experience ul img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+/*projects*/
+.projects {
+  min-height: 420px;
+  background-color: #161513;
+  padding: 35px 0 70px;
+  display: block;
+}
+.projects h2 {
+  color: #ff705c;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.project-list {
+  display: flex;
+  gap: 25px;
+  width: 700px;
+  margin: auto;
+}
+
+.project-card {
+  width: 337px;
+  background-color: #292929;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.project-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-card > a > img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  height: 55px;
+  padding: 8px 45px 8px 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info small {
+  color: #aaa;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.project-info h3 {
+  color: white;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.icon-view {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+/*esperience*/
+.experience-section {
+  min-height: 470px;
+  background-color: #161513;
+  padding: 45px 0 65px;
+  display: block;
+  color: white;
+}
+
+.experience-section > h2 {
+  margin-bottom: 35px;
+  color: #248cff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.experience-list {
+  width: 700px;
+  margin: auto;
+}
+
+.experience-item {
+  padding: 18px 0;
+  border: none;
+}
+
+.experience-item.active {
+  border: none;
+  padding: 18px 0;
+  margin-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.company h3 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 1000px;
+}
+
+.company-icon {
+  width: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.company-icon.apple {
+  font-size: 14px;
+}
+
+.company-icon.meta {
+  color: #248cff;
+  font-size: 22px;
+}
+
+.experience-header time {
+  color: #777777;
+  font-size: 10px;
+}
+
+.experience-item p {
+  width: 700px;
+  padding: 0;
+  color: #999999;
+  font-size: 13px;
+  line-height: 1.55;
+  text-align: left;
+}
+/*contact*/
+.contact {
+  min-height: 230px;
+  background-color: #1b1b1b;
+  padding: 50px 0;
+  display: block;
+  color: white;
+}
+
+.contact-content {
+  width: 700px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contact p {
+  width: 650px;
+  padding: 0;
+  color: #999999;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  gap: 17px;
+  margin-top: 20px;
+}
