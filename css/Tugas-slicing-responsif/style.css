@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header Navbar */
+header {
+  height: 70px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #011942;
+}
+
+.logo img {
+  width: 100px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #fd971e;
+}
+
+.btn-ppdb {
+  padding: 8px 20px;
+  background-color: #fd971e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8% 0;
+  gap: 30px;
+}
+
+.hero-text {
+  width: 45%;
+}
+
+.hero-text h1 {
+  color: #011942;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.hero-text strong {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+.btn-daftar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 22px;
+  background-color: #fd971e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Program Cards */
+.program {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 60px 8% 100px;
+}
+
+.program-card {
+  width: 31%;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  background-color: #011942;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.icon-circle.orange-bg {
+  background-color: #fd971e;
+}
+
+.program-card h3 {
+  color: #011942;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.program-card p {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.program-card a {
+  color: #fd971e;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 8%;
+  background-color: #011942;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  gap: 12px;
+  width: 30%;
+}
+
+.footer-icon {
+  margin-top: 2px;
+}
+
+.footer-item h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.footer-item p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.social a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+ @media (max-width: 768px) {
+  nav,
+  .btn-ppdb {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-wrapper {
+    background: linear-gradient(to bottom, #011942 280px, #ffffff 280px);
+    border-bottom-left-radius: 30px;
+    padding-bottom: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px 5% 0;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    color: #ffffff; 
+    font-size: 22px;
+  }
+
+  .hero-text strong {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    color: #e2e8f0;
+    font-size: 12px;
+    margin: 10px auto 0;
+  }
+
+  .btn-daftar {
+    margin-top: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: 220px;
+  }
+
+  .program {
+    flex-direction: column;
+    padding: 30px 5% 40px;
+    gap: 15px;
+  }
+
+  .program-card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 5%;
+  }
+
+  .footer-item {
+    width: 100%;
+  }
+}
