@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website || my website</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.dribbble.com/userupload/44384027/file/1dd17058b2d7d651465f53eacfab6ecc.jpg?resize=752x&vertical=center"
+    />
+    <style>
+      body {
+        font-size: 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+      header h1 {
+        margin: 20px;
+      }
+      header nav {
+        margin: 20px;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      li a:hover {
+        color: blue;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: darkblue;
+      }
+      section {
+        text-align: center;
+        padding: 50px;
+      }
+      section h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      section img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+      section button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+      }
+      section button:hover {
+        background-color: darkgreen;
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          font-size: 16px;
+        }
+
+        header {
+          padding: 10px 20px;
+          flex-direction: row;
+        }
+
+        header h1 {
+          margin: 10px;
+          font-size: 25px;
+        }
+
+        header button {
+          display: none;
+        }
+
+        .menu {
+          display: block;
+        }
+
+        header button {
+          display: none;
+        }
+
+        nav {
+          display: none;
+          position: absolute;
+          top: 75px;
+          left: 5%;
+          width: 90%;
+          background-color: #111;
+          border-radius: 15px;
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <h1>Azzam</h1>
+      <div class="menu">☰</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button>Login</button>
+    </header>
+    <!--Hero Section-->
+    <section>
+      <img
+        src="https://cdn.dribbble.com/userupload/44384027/file/1dd17058b2d7d651465f53eacfab6ecc.jpg?resize=752x&vertical=center"
+        alt="Hero Image"
+      />
+      <h1>Welcome to my website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+        voluptatum.
+      </p>
+      <button>Get Started</button>
+    </section>
+    <script>
+      const menu = document.querySelector(".menu");
+      const nav = document.querySelector("nav");
+
+      menu.onclick = function () {
+        if (nav.style.display === "block") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "block";
+        }
+      };
+    </script>
+  </body>
+</html>
